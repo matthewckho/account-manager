@@ -20,13 +20,13 @@ Port 8081
 ## Services
 This micro-service provides the following REST WS.  All services consumes and produces JSON format. 
 
-######Get Account Balance
+###### Get Account Balance
 Method: GET<br/>
 Endpoint: /v0/account-manager/getAccountBalance/{accountId}<br/>
 Request: header accountId<br/>
 Response: AmountResponse.java
 
-######Transfer Money
+###### Transfer Money
 Method: POST<br/>
 Endpoint: /v0/account-manager/transferMoney<br/>
 Request: TransferMoneyRequest.java<br/>
@@ -40,10 +40,10 @@ URL: http://localhost:8081/swagger-ui.html
 ## H2 DB 
 H2 DB is stored in file:/db/acmebank<br/>
  
-#####Table ACCOUNT
+##### Table ACCOUNT
  - Store account balance with Account ID as key. 
  
-#####Table AUDIT_TRAIL
+##### Table AUDIT_TRAIL
  - Store all actions from REST WS
  
 H2 DB console is enabled for testing.  Credential is defined in /resources/application.yml<br/>
